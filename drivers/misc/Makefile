@@ -2,7 +2,6 @@
 #
 # Makefile for misc devices that really don't fit anywhere else.
 #
-ccflags-y += -I$(srctree)/drivers/misc/hwid/
 obj-$(CONFIG_IBM_ASM)		+= ibmasm/
 obj-$(CONFIG_IBMVMC)		+= ibmvmc.o
 obj-$(CONFIG_AD525X_DPOT)	+= ad525x_dpot.o
@@ -67,8 +66,6 @@ qseecom-mod-$(CONFIG_QSEECOM)  := qseecom.o
 qseecom-mod-$(CONFIG_COMPAT)	+= compat_qseecom.o
 obj-$(CONFIG_WIGIG_SENSING_SPI)	+= wigig_sensing.o
 obj-$(CONFIG_KINECTICS_XR_NORDIC) += kxrctrl/
-obj-y				+= hwid/
 obj-$(CONFIG_MI_GAMEKEY)        += mi_gamekey/
 obj-$(CONFIG_LDO_WL2866D)	+= wl2866d.o
-obj-$(CONFIG_XIAOMI_GPU_PLAID)	+= plaid/
 obj-$(CONFIG_MMHARDWARE_DETECTION) += mmhardware_sysfs.o
