@@ -167,3 +167,6 @@ sphinx_*/
 
 # Xiaomi Add
 drivers/misc/hwid/
+
+# Standalone build environment
+build/
